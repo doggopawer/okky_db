@@ -129,7 +129,7 @@ CREATE TABLE `writing_tag` (
     `writing_id` BIGINT,
     FOREIGN KEY (`writing_id`) REFERENCES `writing` (`id`),
     PRIMARY KEY (`id`),
-    UNIQUE KEY (`id`)
+    UNIQUE KEY (`id`,`name`)
 );
 CREATE TABLE `scrap` (
     `id` INT AUTO_INCREMENT,
